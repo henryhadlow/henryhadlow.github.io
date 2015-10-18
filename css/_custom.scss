@@ -1,0 +1,125 @@
+
+html {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  max-width: 630px;
+  font-family: "Eksell Display Small", serif;
+  font-weight: normal;
+  font-style: normal;
+  // font-family: "Roboto";
+  color: #222;
+  margin: 0 auto;
+  padding: 15px 15px 20px 15px;
+}
+
+.wrapper {
+  padding: 0 20px 30px 15px;
+  background-color: white;
+}
+
+.intro {
+  padding-top: 15px;
+
+  img {
+    width: 135px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+p, h1, h2, h3 {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 45px;
+  margin: 0 0 20px 0;
+  // font-weight: 100;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+$link-color: #F42B5A;
+$link-underline-color: lighten($link-color, 15%);
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid $link-underline-color;
+
+  &:hover, &:active {
+    color: $link-color;
+  }
+
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+}
+
+.news-article, .blog-post, .sign-off {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.news-article, .blog-post {
+  margin: 0 0 15px 0;
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+
+    &:hover, &:active {
+      color: $link-color;
+    }
+
+    .article-source {
+      margin-right: 8px;
+      border-bottom: 1px solid $link-underline-color;
+    }
+  }
+}
+
+.sign-off p {
+  text-align: center;
+}
+
+// (Slightly) responsive layout
+
+@media only screen and (min-width: 450px) {
+  body {
+    padding: 20px 20px 25px 20px;
+  }
+  .wrapper {
+    padding: 0 25px 30px 20px;
+  }
+  .intro {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  body {
+    padding: 30px 30px 35px 30px;
+  }
+  .wrapper {
+    padding: 0 35px 30px 30px;
+  }
+  .intro {
+    padding-top: 30px;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}

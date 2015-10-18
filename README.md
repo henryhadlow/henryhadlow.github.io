@@ -1,9 +1,13 @@
 # To do
 
 - [X] Add content
-- [ ] Style content
-- [ ] Analytics
+- [X] Add styles
+- [X] Links animate on mouseover
 - [ ] Animations on load
-- [ ] Animations on mouseover
+- [ ] Analytics
 - [ ] Make CV
+- [ ] Buy font
+- [ ] Inline everything
+- [ ] New domain?
+- [ ] Sort out hosting
 - [ ] Inline everything

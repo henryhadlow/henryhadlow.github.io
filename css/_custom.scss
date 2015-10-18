@@ -1,29 +1,29 @@
 
 html {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/coloured-marble-texture.jpg");
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  max-width: 630px;
+  max-width: 708px;
   font-family: "Eksell Display Small", serif;
   font-weight: normal;
   font-style: normal;
-  // font-family: "Roboto";
-  color: #222;
+  color: #DDD;
   margin: 0 auto;
-  padding: 15px 15px 20px 15px;
+  padding: 20px 20px 25px 20px;
 }
 
 .wrapper {
-  padding: 0 20px 30px 15px;
-  background-color: white;
+  padding: 0 25px 30px 20px;
+  background-color: #333;
 }
 
 .intro {
-  padding-top: 15px;
+  padding-top: 20px;
 
   img {
     width: 135px;
@@ -32,21 +32,27 @@ body {
   }
 }
 
-p, h1, h2, h3 {
+h1, h2, h3 {
   font-weight: normal;
   font-style: normal;
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 27px;
+  line-height: 35px;
   margin: 0 0 20px 0;
-  // font-weight: 100;
 }
 
 h1 {
   margin-bottom: 10px;
 }
 
-$link-color: #F42B5A;
-$link-underline-color: lighten($link-color, 15%);
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+$link-color: #00DD99;
+$link-underline-color: $link-color;
 
 a {
   color: inherit;
@@ -62,11 +68,6 @@ a {
   -moz-transition:.1s;
   -webkit-transition:.1s;
   transition:.1s;
-}
-
-.news-article, .blog-post, .sign-off {
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .news-article, .blog-post {
@@ -87,7 +88,7 @@ a {
   }
 }
 
-.sign-off p {
+.sign-off {
   text-align: center;
 }
 
@@ -95,26 +96,26 @@ a {
 
 @media only screen and (min-width: 450px) {
   body {
-    padding: 20px 20px 25px 20px;
-  }
-  .wrapper {
-    padding: 0 25px 30px 20px;
-  }
-  .intro {
-    padding-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  body {
     padding: 30px 30px 35px 30px;
   }
   .wrapper {
-    padding: 0 35px 30px 30px;
+    padding: 0 40px 35px 35px;
   }
   .intro {
-    padding-top: 30px;
+    padding-top: 35px;
   }
+  h1, h2, h3 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
 }
 
 @media print,

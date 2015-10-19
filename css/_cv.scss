@@ -1,0 +1,24 @@
+
+body.cv {
+  max-width: 964px;
+  line-height: 25px;
+
+  p {
+    max-width: 768px;
+  }
+  p.sign-off {
+    max-width: none;
+  }
+
+  .experience-organisation,
+  .experience-role,
+  .education-organisation,
+  .education-dates,
+  .award a {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  @media only screen and (min-width: 450px) {
+    line-height: 35px;
+  }
+}

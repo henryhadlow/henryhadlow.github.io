@@ -438,16 +438,19 @@ html {
 
 body {
   max-width: 708px;
-  font-family: "Eksell Display Small", serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #DDD;
   margin: 0 auto;
-  padding: 20px 20px 25px 20px; }
+  padding: 20px 20px 25px 20px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #DDD; }
 
 .wrapper {
   padding: 0 25px 30px 20px;
   background-color: #333; }
+  .wrapper section {
+    padding: 0 0 30px; }
 
 .intro {
   padding-top: 20px; }
@@ -456,21 +459,26 @@ body {
     display: block;
     margin: 0 auto; }
 
-h1, h2, h3 {
+h1, h2, h3, p.lede {
+  font-family: "Eksell Display Small", "Times New Roman", serif;
   font-weight: normal;
   font-style: normal;
   font-size: 27px;
   line-height: 35px;
   margin: 0 0 20px 0; }
 
+p, ul, ol {
+  margin: 0 0 15px 0; }
+
+li {
+  margin-bottom: 15px; }
+
 h1 {
   margin-bottom: 10px; }
 
-p {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px; }
+ul, ol {
+  list-style-type: none;
+  padding: 0; }
 
 a {
   color: inherit;
@@ -484,16 +492,14 @@ a {
   a:hover, a:active {
     color: #00dd99; }
 
-.news-article, .blog-post {
-  margin: 0 0 15px 0; }
-  .news-article a, .blog-post a {
-    color: inherit;
-    border-bottom: 0; }
-    .news-article a:hover, .news-article a:active, .blog-post a:hover, .blog-post a:active {
-      color: #00dd99; }
-    .news-article a .article-source, .blog-post a .article-source {
-      margin-right: 8px;
-      border-bottom: 1px solid #00dd99; }
+.news-article a, .blog-post a {
+  color: inherit;
+  border-bottom: 0; }
+  .news-article a:hover, .news-article a:active, .blog-post a:hover, .blog-post a:active {
+    color: #00dd99; }
+  .news-article a .article-source, .blog-post a .article-source {
+    margin-right: 8px;
+    border-bottom: 1px solid #00dd99; }
 
 .sign-off {
   text-align: center; }
@@ -508,15 +514,36 @@ a {
   .intro {
     padding-top: 35px; }
 
-  h1, h2, h3 {
+  body {
+    font-size: 24px;
+    line-height: 30px; }
+
+  h1, h2, h3, p.lede {
     font-size: 35px;
     line-height: 45px; }
 
-  p {
-    font-size: 24px;
-    line-height: 30px; } }
+  li {
+    margin: 0; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
+body.cv {
+  max-width: 964px;
+  line-height: 25px; }
+  body.cv p {
+    max-width: 768px; }
+  body.cv p.sign-off {
+    max-width: none; }
+  body.cv .experience-organisation,
+  body.cv .experience-role,
+  body.cv .education-organisation,
+  body.cv .education-dates,
+  body.cv .award a {
+    display: inline-block;
+    margin-right: 8px; }
+  @media only screen and (min-width: 450px) {
+    body.cv {
+      line-height: 35px; } }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

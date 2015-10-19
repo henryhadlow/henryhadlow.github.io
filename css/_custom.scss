@@ -9,17 +9,22 @@ html {
 
 body {
   max-width: 708px;
-  font-family: "Eksell Display Small", serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #DDD;
   margin: 0 auto;
   padding: 20px 20px 25px 20px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #DDD;
 }
 
 .wrapper {
   padding: 0 25px 30px 20px;
   background-color: #333;
+
+  section {
+    padding: 0 0 30px;
+  }
 }
 
 .intro {
@@ -32,7 +37,8 @@ body {
   }
 }
 
-h1, h2, h3 {
+h1, h2, h3, p.lede {
+  font-family: "Eksell Display Small", "Times New Roman", serif;
   font-weight: normal;
   font-style: normal;
   font-size: 27px;
@@ -40,15 +46,21 @@ h1, h2, h3 {
   margin: 0 0 20px 0;
 }
 
+p, ul, ol {
+  margin: 0 0 15px 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
 h1 {
   margin-bottom: 10px;
 }
 
-p {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+ul, ol {
+  list-style-type: none;
+  padding: 0;
 }
 
 $link-color: #00DD99;
@@ -71,8 +83,6 @@ a {
 }
 
 .news-article, .blog-post {
-  margin: 0 0 15px 0;
-
   a {
     color: inherit;
     border-bottom: 0;
@@ -104,13 +114,16 @@ a {
   .intro {
     padding-top: 35px;
   }
-  h1, h2, h3 {
+  body {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  h1, h2, h3, p.lede {
     font-size: 35px;
     line-height: 45px;
   }
-  p {
-    font-size: 24px;
-    line-height: 30px;
+  li {
+    margin: 0;
   }
 }
 

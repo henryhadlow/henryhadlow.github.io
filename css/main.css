@@ -526,23 +526,26 @@ a {
     margin: 0; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
-body.cv {
-  max-width: 964px;
-  line-height: 25px; }
-  body.cv p {
-    max-width: 768px; }
-  body.cv p.sign-off {
-    max-width: none; }
-  body.cv .experience-organisation,
-  body.cv .experience-role,
-  body.cv .education-organisation,
-  body.cv .education-dates,
-  body.cv .award a {
-    display: inline-block;
-    margin-right: 8px; }
-  @media only screen and (min-width: 450px) {
-    body.cv {
-      line-height: 35px; } }
+html.cv {
+  background-image: url("../img/white-marble-texture.jpg"); }
+  html.cv body {
+    max-width: 964px;
+    line-height: 25px;
+    color: #DDD; }
+    html.cv body p {
+      max-width: 768px; }
+    html.cv body p.sign-off {
+      max-width: none; }
+    html.cv body .experience-organisation,
+    html.cv body .experience-role,
+    html.cv body .education-organisation,
+    html.cv body .education-dates,
+    html.cv body .award a {
+      display: inline-block;
+      margin-right: 8px; }
+    @media only screen and (min-width: 450px) {
+      html.cv body {
+        line-height: 35px; } }
 
 /* ==========================================================================
    Helper classes

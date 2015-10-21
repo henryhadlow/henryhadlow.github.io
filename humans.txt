@@ -1,15 +1,15 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
-
-    <name> -- <role> -- <twitter>
+Henry Hadlow – @henryhadlow
 
 # THANKS
 
-    <name>
+    Letters from Sweden for the font Eksell Display
+    lettersfromsweden.se @lettersfromswe
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Modernizr, Normalize.css
+    sass, LiveReload

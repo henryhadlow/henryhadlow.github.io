@@ -7,5 +7,5 @@
 - [X] Make CV
 - [X] Add font
 ~~- [ ] Inline everything~~
-- [ ] Sort out hosting
+- [X] Sort out hosting
 - [ ] Animations on load

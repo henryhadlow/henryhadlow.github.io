@@ -7,5 +7,6 @@
 - [X] Make CV
 - [X] Add font
 ~~- [ ] Inline everything~~
-- [X] Sort out hosting
+- [X] Add favicon
+- [X] Create repo and push
 - [ ] Animations on load

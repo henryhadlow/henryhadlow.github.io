@@ -5,7 +5,7 @@
 - [X] Links animate on mouseover
 - [X] Analytics
 - [X] Make CV
-- [ ] Add font
-- [ ] Inline everything
+- [X] Add font
+~~- [ ] Inline everything~~
 - [ ] Sort out hosting
 - [ ] Animations on load

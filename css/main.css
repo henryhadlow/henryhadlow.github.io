@@ -458,6 +458,9 @@ body {
   line-height: 25px;
   color: #DDD; }
 
+main {
+  background-color: #333; }
+
 .wrapper {
   padding: 0 25px 30px 20px;
   background-color: #333; }
@@ -515,6 +518,8 @@ a {
 
 .sign-off {
   text-align: center; }
+  .sign-off a {
+    border-bottom: 0; }
 
 @media only screen and (min-width: 450px) {
   body {

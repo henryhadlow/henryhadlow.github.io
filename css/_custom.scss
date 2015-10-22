@@ -18,6 +18,10 @@ body {
   color: #DDD;
 }
 
+main {
+  background-color: #333;
+}
+
 .wrapper {
   padding: 0 25px 30px 20px;
   background-color: #333;
@@ -100,6 +104,10 @@ a {
 
 .sign-off {
   text-align: center;
+
+  a {
+    border-bottom: 0;
+  }
 }
 
 // (Slightly) responsive layout

@@ -1,7 +1,0 @@
-body.cv {
-  max-width: 964px;
-  line-height: 25px; }
-
-@media only screen and (min-width: 450px) {
-  body.cv {
-    line-height: 35px; } }

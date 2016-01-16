@@ -697,4 +697,33 @@ html.cv {
 
   h2,
   h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid; }
+
+  /* Custom print styles */
+  @page {
+    margin: 50px 50px 60px 50px; }
+  html.cv body {
+    max-width: 75%;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto 0 0;
+    padding: 0; }
+    html.cv body a {
+      border-bottom: none; }
+  html.cv .wrapper {
+    padding: 0 0 10px 0;
+    background-color: #333; }
+    html.cv .wrapper section {
+      padding: 0 0 30px; }
+  html.cv h1, html.cv h2, html.cv h3, html.cv p.lede {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0 0 10px 0; }
+  html.cv p {
+    margin: 0 0 15px 0; }
+  html.cv ul, html.cv ol {
+    margin: 0 0 15px 0; }
+  html.cv li {
+    margin-bottom: 15px; }
+  html.cv .sign-off {
+    text-align: left; } }

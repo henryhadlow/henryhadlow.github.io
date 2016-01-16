@@ -41,7 +41,7 @@ main {
   }
 }
 
-h1, h2, h3, p.lede {
+h1, h2, h3, p.lede, .get-in-touch {
   font-family: "Eksell-Display-small", "Times New Roman", serif;
   font-weight: bold;
   font-style: normal;
@@ -65,6 +65,11 @@ h1 {
 ul, ol {
   list-style-type: none;
   padding: 0;
+}
+
+.contact-details li, .get-in-touch, .get-in-touch li {
+  display: inline;
+  margin-right: 10px;
 }
 
 $link-color: #00DD99;
@@ -102,7 +107,12 @@ a {
   }
 }
 
+.archive {
+  margin-top: 30px;
+}
+
 .sign-off {
+  margin-top: 30px;
   text-align: center;
 
   a {
@@ -126,22 +136,11 @@ a {
     font-size: 24px;
     line-height: 30px;
   }
-  h1, h2, h3, p.lede {
+  h1, h2, h3, p.lede, .get-in-touch {
     font-size: 35px;
     line-height: 45px;
   }
   li {
     margin: 0;
   }
-}
-
-@media only screen and (min-width: 600px) {
-
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
 }

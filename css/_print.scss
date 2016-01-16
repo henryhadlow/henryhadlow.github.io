@@ -16,7 +16,8 @@
 
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: none;
+  }
 
   a[href]:after {
     content: " (" attr(href) ")"; }
@@ -59,4 +60,73 @@
 
   h2,
   h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid; }
+
+  /* Custom print styles */
+
+  @page {
+    margin: 50px 50px 60px 50px;
+  }
+
+  html, html.cv {
+    body {
+      max-width: 75%;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 auto 0 0;
+      padding: 0;
+
+      /* Allow URLs to break over the line */
+      /* These are technically the same, but use both */
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+
+      -ms-word-break: break-all;
+      /* This is the dangerous one in WebKit, as it breaks things wherever */
+      word-break: break-all;
+      /* Instead use this non-standard one: */
+      word-break: break-word;
+
+      /* Adds a hyphen where the word breaks, if supported (No Blink) */
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+
+      a {
+        border-bottom: none;
+      }
+    }
+    .wrapper {
+      padding: 0 0 10px 0;
+      background-color: #333;
+
+      section {
+        padding: 0 0 30px;
+        page-break-after: auto;
+      }
+    }
+
+    h1, h2, h3, p.lede, .get-in-touch {
+      font-size: 24px;
+      line-height: 35px;
+      margin: 0 0 10px 0;
+    }
+    p {
+      margin: 0 0 15px 0;
+    }
+    ul, ol {
+      margin: 0 0 15px 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    .contact-details li, .get-in-touch, .get-in-touch li {
+      display: block;
+    }
+    .sign-off {
+      margin-top: 30px;
+      text-align: left;
+    }
+  }
+}

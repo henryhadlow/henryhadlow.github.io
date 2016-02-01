@@ -31,9 +31,10 @@ html.cv {
       }
     }
 
-    .experience-organisation,
-    .experience-role,
-    .education-organisation,
+    .experience-dates {
+      color: #666;
+    }
+
     .education-dates,
     .award a {
       display: inline-block;

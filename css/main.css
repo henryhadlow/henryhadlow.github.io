@@ -567,9 +567,8 @@ html.cv {
       border-bottom: 1px solid #00d29e; }
       html.cv body a:hover, html.cv body a:active {
         color: #008564; }
-    html.cv body .experience-organisation,
-    html.cv body .experience-role,
-    html.cv body .education-organisation,
+    html.cv body .experience-dates {
+      color: #666; }
     html.cv body .education-dates,
     html.cv body .award a {
       display: inline-block;

@@ -1,15 +1,16 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-Henry Hadlow – @henryhadlow
+This is the personal website of Henry Hadlow – @henryhadlow
 
-# THANKS
+## Thanks
 
-    Letters from Sweden for the font Eksell Display
-    lettersfromsweden.se @lettersfromswe
+Thanks to [Jean Baptiste Morizot](http://cargocollective.com/jbmorizot/) for the font [Bluu Next](http://velvetyne.fr/fonts/bluu/)
 
-# TECHNOLOGY COLOPHON
+## Technology used
 
-    CSS3, HTML5
-    Modernizr, Normalize.css
-    sass, LiveReload
+- html5
+- css3
+- normalize.css
+- scss
+- jekyll

@@ -1,4 +1,4 @@
-$background-colour: #002147;
+$background-colour: #061e3b;
 $text-colour: #e0e0e0;
 $accent-colour: #e66666;
 $unit: 5px;
@@ -15,12 +15,12 @@ html {
 }
 
 body {
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
   padding: $unit*6 $unit*4;
   font-family: "BluuNextBold", Times, "Times New Roman", serif;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 22px;
   line-height: 30px;
   color: $text-colour;
 }
@@ -32,8 +32,9 @@ h1, h2, h3 {
     "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.333;
+  font-size: 13px;
+  line-height: 1.5385;
+  letter-spacing: 0.05em;
   color: $accent-colour;
   margin: 0 0 $unit * 3 0;
   text-transform: uppercase;
@@ -44,7 +45,7 @@ section {
 }
 
 .intro {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 35px;
   h1 {
     margin-bottom: $unit * 8;
@@ -75,25 +76,36 @@ ul, ol {
 }
 
 .sign-off {
-  // margin-top: $unit * 6;
   text-align: center;
+}
+.heart {
+  color: $accent-colour;
 }
 
 // (Slightly) responsive layout
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 708px) {
   body {
-    padding: $unit * 6 $unit * 4 $unit * 10 0;
+    padding: $unit*6 $unit*4 $unit*10 0;
   }
   body {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 35px;
   }
-  h1, h2, h3, p.lede, .get-in-touch {
-    font-size: 35px;
+  h1, h2, h3 {
+    font-size: 15px;
+    line-height: 1.3333;
+  }
+
+  .intro {
+    font-size: 32px;
     line-height: 45px;
+    h1 {
+      margin-bottom: $unit * 8;
+    }
   }
   li {
     margin: 0;
+    margin-bottom: $unit * 4;
   }
 }

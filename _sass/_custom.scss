@@ -1,53 +1,45 @@
+$background-colour: #002147;
+$text-colour: #e0e0e0;
+$accent-colour: #e66666;
 
 html {
-  background-image: url("../img/coloured-marble-texture.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
+  background-color: $background-colour;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
 }
 
 body {
-  max-width: 708px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px 20px 25px 20px;
-  font-family: "Bluu Next", Times, "Times New Roman", serif;
+  font-family: "BluuNextBold", Times, "Times New Roman", serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-  color: #DDD;
+  color: $text-colour;
 }
 
-main {
-  background-color: #333;
-}
-
-.wrapper {
-  padding: 0 25px 30px 20px;
-  background-color: #333;
-
-  section {
-    padding: 0 0 30px;
-  }
-}
-
-.intro {
-  padding-top: 20px;
-
-  img {
-    width: 135px;
-    display: block;
-    margin: 0 auto;
-  }
+section {
+  padding: 0 0 30px;
 }
 
 h1, h2, h3, p.lede, .get-in-touch {
-  font-family: "Eksell-Display-small", "Times New Roman", serif;
-  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 27px;
-  line-height: 35px;
-  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 1.333;
+  color: $accent-colour;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
 }
 
 p, ul, ol {
@@ -89,6 +81,14 @@ a {
   -moz-transition:.1s;
   -webkit-transition:.1s;
   transition:.1s;
+
+  .stealth-link {
+    border-bottom: none;
+
+    &:hover, &:active {
+      color: inherit;
+    }
+  }
 }
 
 .news-article, .blog-post {
@@ -107,10 +107,6 @@ a {
   }
 }
 
-.archive {
-  margin-top: 30px;
-}
-
 .sign-off {
   margin-top: 30px;
   text-align: center;
@@ -124,13 +120,7 @@ a {
 
 @media only screen and (min-width: 450px) {
   body {
-    padding: 30px 30px 35px 30px;
-  }
-  .wrapper {
-    padding: 0 40px 35px 35px;
-  }
-  .intro {
-    padding-top: 35px;
+    padding: 30px 20px 50px 0;
   }
   body {
     font-size: 24px;

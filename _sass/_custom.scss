@@ -1,6 +1,7 @@
 $background-colour: #002147;
 $text-colour: #e0e0e0;
 $accent-colour: #e66666;
+$unit: 5px;
 
 html {
   background-color: $background-colour;
@@ -16,19 +17,15 @@ html {
 body {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px 20px 25px 20px;
+  padding: $unit*6 $unit*4;
   font-family: "BluuNextBold", Times, "Times New Roman", serif;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 21px;
+  line-height: 30px;
   color: $text-colour;
 }
 
-section {
-  padding: 0 0 30px;
-}
-
-h1, h2, h3, p.lede, .get-in-touch {
+h1, h2, h3 {
   font-family: -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans",
@@ -38,20 +35,33 @@ h1, h2, h3, p.lede, .get-in-touch {
   font-size: 14px;
   line-height: 1.333;
   color: $accent-colour;
-  margin: 0 0 50px 0;
+  margin: 0 0 $unit * 3 0;
   text-transform: uppercase;
 }
 
-p, ul, ol {
-  margin: 0 0 15px 0;
+section {
+  padding-bottom: $unit * 6;
+}
+
+.intro {
+  font-size: 24px;
+  line-height: 35px;
+  h1 {
+    margin-bottom: $unit * 8;
+  }
+}
+
+p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
+  margin: 0;
+  margin-bottom: $unit * 5;
 }
 
 li {
-  margin-bottom: 15px;
+  margin-bottom: $unit * 3;
 }
 
-h1 {
-  margin-bottom: 10px;
+.awards li, .contact li {
+  margin-bottom: $unit;
 }
 
 ul, ol {
@@ -59,68 +69,21 @@ ul, ol {
   padding: 0;
 }
 
-.contact-details li, .get-in-touch, .get-in-touch li {
+.contact li {
   display: inline;
-  margin-right: 10px;
-}
-
-$link-color: #00DD99;
-$link-underline-color: $link-color;
-
-a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid $link-underline-color;
-
-  &:hover, &:active {
-    color: $link-color;
-  }
-
-  -o-transition:.1s;
-  -ms-transition:.1s;
-  -moz-transition:.1s;
-  -webkit-transition:.1s;
-  transition:.1s;
-
-  .stealth-link {
-    border-bottom: none;
-
-    &:hover, &:active {
-      color: inherit;
-    }
-  }
-}
-
-.news-article, .blog-post {
-  a {
-    color: inherit;
-    border-bottom: 0;
-
-    &:hover, &:active {
-      color: $link-color;
-    }
-
-    .article-source {
-      margin-right: 8px;
-      border-bottom: 1px solid $link-underline-color;
-    }
-  }
+  margin-right: $unit * 2;
 }
 
 .sign-off {
-  margin-top: 30px;
+  // margin-top: $unit * 6;
   text-align: center;
-
-  a {
-    border-bottom: 0;
-  }
 }
 
 // (Slightly) responsive layout
 
 @media only screen and (min-width: 450px) {
   body {
-    padding: 30px 20px 50px 0;
+    padding: $unit * 6 $unit * 4 $unit * 10 0;
   }
   body {
     font-size: 24px;

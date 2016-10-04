@@ -1,0 +1,40 @@
+$link-underline-colour: $accent-colour;
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "BluuNextBoldItalic", Times, "Times New Roman", serif;
+  font-style: italic;
+  border-bottom: 1px solid transparent;
+
+  &:hover, &:active {
+    border-bottom: 1px solid $link-underline-colour;
+  }
+
+  -o-transition: .1s ease-in-out;
+  -ms-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.contact a, .sign-off a, .article-source {
+  font-family: "BluuNextBold", Times, "Times New Roman", serif;
+  font-style: normal;
+}
+
+// .news-article, .blog-post {
+//   a {
+//     color: inherit;
+//     border-bottom: 0;
+
+//     &:hover, &:active {
+//       color: $link-colour;
+//     }
+
+//     .article-source {
+//       margin-right: 8px;
+//       border-bottom: 1px solid $link-underline-colour;
+//     }
+//   }
+// }
